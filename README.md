@@ -10,6 +10,7 @@ Given the index.html rendered, we expect that 2 React components will be rendere
 Given these two React components, we expect to see them using some implementation of state, hooks or another appropriate middleware.\
 Given the 'Log' Section in the rendered page, we expect to see this continually updated every 2 seconds with the latest pricing information, with the newest information at the top of the screen\
 Given the 'Summary' Section, we expect to see an aggregate view of the data from the api that has been processed by the web app. This aggregate view should contain:\
+Do not use global state management libraries like Redux or Mobx etc.\
 Starting Price Lowest Price seen Highest Price seen Current Price\
 Because there is a lot of data coming through the log, when we view the page, we expect to see a pause / resume button rendered as a seperate component.\
 When the "Pause' button is hit we expect that the Log will stop updating, but we expect the summary view to continue to update and show current values\
