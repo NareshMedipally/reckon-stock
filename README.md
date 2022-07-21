@@ -2,9 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ## Requirements 
 Endpoint: https://join.reckon.com/stock-pricing that returns data for our stock quotes.\
@@ -19,6 +16,10 @@ When the "Pause' button is hit we expect that the Log will stop updating, but we
 When the "Pause" button is hit, we expect that the pause button will be have its text changed to 'Resume"\
 When the "Resume" button is hit, we expect that the Log will again continue to update, but it will not list any stock updates since 'pause' was pressed.\
 When the "Resume" button is hit, we expect that the text of this button will change to "Pause".
+
+## Available Scripts
+
+In the project directory, you can run:
 
 ### `npm start`
 
