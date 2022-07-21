@@ -41,7 +41,7 @@ const App: React.FC = () => {
             }, ...state]);
           }
         } else {
-          //setError(await response.text());
+          console.log(response.text()) ;
         }
       })
       .catch((err) => {
@@ -54,17 +54,17 @@ const App: React.FC = () => {
    * @param arr 
    */
   const getSummaryData = (arr: StockInfo[]) => {
-    if (summaryRef.current.length == 0) {
+    if (summaryRef.current.length === 0) {
       let result = _(arr)
         .groupBy(x => x.code)
         .map((value, key) => ({ code: key, rate: [value[0].price] }))
         .value();
       summaryRef.current = result
     } else {
-      let historicalData = summaryRef.current
+      let historicalData = summaryRef.current;
       for (let index in arr) {
         historicalData.filter(x => {
-          if (x.code == arr[index].code) {
+          if (x.code === arr[index].code) {
             x.rate = [...x.rate, arr[index].price]
           }
         })
